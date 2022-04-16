@@ -1,0 +1,17 @@
+{
+    "BAS": {
+        "product_code": "BAS",
+        "product_name": "Basil",
+        "price": 3.11
+    },
+    "PAR": {
+        "product_code": "PAR",
+        "product_name": "Parsley",
+        "price": 5.00
+    },
+    "COR": {
+        "product_code": "COR",
+        "product_name": "Coriander",
+        "price": 11.23
+    }
+}
