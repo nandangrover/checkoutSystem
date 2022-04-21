@@ -13,5 +13,10 @@
         "product_code": "COR",
         "product_name": "Coriander",
         "price": 11.23
+    },
+    "ROS": {
+        "product_code": "ROS",
+        "product_name": "Rosemary",
+        "price": 2
     }
 }
