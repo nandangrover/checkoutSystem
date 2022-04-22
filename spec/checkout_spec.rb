@@ -25,5 +25,19 @@ describe Checkout do
 
       expect(checkout.amount_due).to eq(23.94)
     end
+
+    it 'is returns correct discount with the percent off rule for 4 items and 2 count' do
+      rules = [{ name: 'percent_off', item_count: 2, discount_percent: 50, item_code: 'ROS' }]
+      checkout = Checkout.new(rules, %w[ROS ROS ROS ROS])
+
+      expect(checkout.amount_due).to eq(6)
+    end
+
+    it 'is returns correct discount with the percent off rule for 4 items and 1 count' do
+      rules = [{ name: 'percent_off', item_count: 1, discount_percent: 50, item_code: 'ROS' }]
+      checkout = Checkout.new(rules, %w[ROS ROS ROS ROS])
+
+      expect(checkout.amount_due).to eq(7)
+    end
   end
 end
